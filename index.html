@@ -31,7 +31,12 @@
                 </a>
             </div>
             <div class="menu-mob">
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars menu-mob-ico"></i>
+                <div class="menu-items">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Contato</a>
+                </div>
             </div>
         </div>
     </header>
@@ -105,8 +110,94 @@
         </div>
     </section>
 
+    <section class="about-det">
+        <div class="center">
+            <img class="about-det-img" src="/img/about.jpg" alt="Imagem sobre">
+            <div class="about-det-content">
+                <h2>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.
+                </h2>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="conquest">
+        <div class="center">
+            <div class="conquest-single" style="width:16%;margin-right:9%;">
+                <img src="/img/client.png" alt="Cliente">
+            </div>
+            <div class="conquest-single" style="width:16%;margin-right:9%;">
+                <img src="/img/client.png" alt="Cliente">
+            </div>
+            <div class="conquest-single" style="width:16%;margin-right:9%;">
+                <img src="/img/client.png" alt="Cliente">
+            </div>
+            <div class="conquest-single" style="width:16%;margin-right:9%;">
+                <img src="/img/client.png" alt="Cliente">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial">
+        <div class="center">
+            <div class="testimonial-call">
+                <h2>Testimony</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+
+            <div class="carrousel">
+                <div class="carrousel-single">
+                    <div class="carrousel-single-box">
+                        <p><i class="fas fa-quote-left"></i> Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa. <i class="fas fa-quote-right"></i></p>                        
+                    </div>
+                    <img src="/img/testimonials.jpg"alt="Criador depoimento">
+                    <p>Sara Wilsson</p>
+                    <span>Designer</span>
+                </div>
+                <div class="carrousel-single">
+                    <div class="carrousel-single-box">
+                        <p><i class="fas fa-quote-left"></i> Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa. <i class="fas fa-quote-right"></i></p>                        
+                    </div>
+                    <img src="/img/testimonials.jpg"alt="Criador depoimento">
+                    <p>Sara Wilsson</p>
+                    <span>Designer</span>
+                </div>
+                <div class="carrousel-single">
+                    <div class="carrousel-single-box">
+                        <p><i class="fas fa-quote-left"></i> Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa. <i class="fas fa-quote-right"></i></p>                        
+                    </div>
+                    <img src="/img/testimonials.jpg"alt="Criador depoimento">
+                    <p>Sara Wilsson</p>
+                    <span>Designer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ICON -->
     <script src="https://kit.fontawesome.com/16544f2866.js" crossorigin="anonymous"></script>
+    <script>
+        var el = document.querySelector('.menu-mob-ico');
+
+        el.addEventListener('click', () => {
+            // Mostrar o menu mobile 
+            var menuItems = document.querySelector('.menu-items');
+            if (menuItems.classList.contains('show')) {
+                menuItems.classList.add('hidde');
+                menuItems.classList.remove('show');
+            } else {
+                menuItems.classList.add('show');
+                menuItems.classList.remove('hidde');
+            }
+        });
+    </script>
 </body>
 
 </html>

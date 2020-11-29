@@ -13,10 +13,6 @@
     flex-wrap: wrap;
 }
 
-.menu-mob {
-    display: none;
-}
-
 header {
     background-color: white;
     padding: 20px 0;
@@ -60,6 +56,10 @@ header {
 .menu .btn-menu:hover {
     background-color: #124265;
     color: white;
+}
+
+.menu-mob {
+    display: none;
 }
 
 /* Section Main */
@@ -176,6 +176,133 @@ section.conquest {
 
  .conquest-single h2 {
      font-size: 30px;
+}
+
+.conquest-single img {
+    width: 100%;
+    filter: grayscale(100%);
+    transform: scale(1,1);
+    transition: 1s;
+}
+
+.conquest-single img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1,1.1);
+}
+
+.menu-items {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 60;
+    width: 100%;
+    text-align: center;    
+    border-bottom: 2px solid rgb(200, 200, 200);
+    display: block;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.menu-items.show {
+    opacity: 1;
+}
+
+.menu-items.hidde {
+    opacity: 0;
+}
+
+.menu-items a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+    
+}
+
+section.about-det {
+    padding: 40px 0;
+}
+
+.about-det-img {
+    width: 50%;
+}
+
+.about-det-img img {
+    max-width: 100%;
+}
+
+.about-det-content {
+    width: 50%;
+    padding: 0 50px;
+}
+
+.about-det-content h2 {
+    color: #124265;
+    margin-bottom: 20px;    
+}
+
+.about-det-content p {
+    color: #444444;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+section.testimonial {
+    padding: 40px 0;
+}
+
+section.testimonial .testimonial-call {
+    text-align: center;
+}
+
+.testimonial-call h2 {
+    color: #124265;
+    text-transform: uppercase;
+}
+
+.testimonial-call p {
+    color: #999999;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.carrousel {
+    display: flex;
+}
+
+.carrousel-single {
+    width: 31%;
+    margin-right: 2%;
+    text-align: center;
+}
+
+.carrousel-single img {
+    width: 80px;
+    height: 80px;
+    display: inline;
+    margin: 10px 0;
+    border-radius: 40px;
+}
+
+.carrousel-single-box {
+    padding: 20px;
+    background-color: #f3f9fd;
+    border-radius: 8px;
+}
+
+.carrousel-single-box p {
+    font-style: italic;
+    color: #444444;
+    font-size: 13px;
+}
+
+.carrousel-single-box span {
+    color: #999999;
+}
+
+.carrousel-single-box i {
+    color: #c9e3f5;
+    font-size: 18px;
+    padding: 0 8px;
 }
 
 @media screen and (max-width: 768px){
